@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messy ToDo</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="card shadow-sm">
+
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">📝 Todo List</h3>
+      </div>
+
+      <!-- to display all my task -->
+      <div class="card-body">
+        <div class="input-group mb-3">
+          <input id="taskInput" type="text" class="form-control" placeholder="Enter a new task">
+          <button onclick="addTask()" class="btn btn-success">
+            📝 <i class="bi bi-plus"></i>
+          </button>
+        </div>
+        <ul id="taskList" class="list-group"></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- to display all task done -->
+  <div id="doneTask" class="container alert alert-success d-none mt-4" role="alert">
+    <i class="bi bi-check-circle-fill me-2"></i> All tasks done!
+  </div>
+
+  <script src="./JS/script.js"></script>
+</body>
+</html>
